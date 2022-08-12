@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+main {
+    background-color: #000;
+    color: aliceblue;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+#rounds {
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.score-container p{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Rubik Iso', cursive;
+}
+
+.score {
+    border: 5px red solid;
+    padding: 20px 70px;
+}
+
+#winner {
+    margin: 30px 0;
+    font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+button {
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+
+    
+}
+
+#buttons {
+    width: 40%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#buttons button{
+    transition: background-color 9ms, transform 1s;
+}
+
+#reset {
+    background-color: red;
+    margin-right: 30px;
+    color: aliceblue;
+    
+}
+
+#buttons button:active {
+    background-color: red;
+    color: aliceblue;
+    
+}
+
+#buttons button:hover {
+    transform: translateY(-3px);
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    #rounds {
+        font-size: 20px;
+    }
+
+    .score-container {
+        width: 100%;
+    }
+
+    .score {
+        border: 1px red solid;
+        padding: 20px;
+    }
+    
+}
+
+/* @media screen and (width: 1024px),(width: 820px){
+    main {
+        width: 80%;
+        min-height: 70vh
+    }
+
+    #rounds {
+        font-size: 20px;
+    }
+
+    .score-container {
+        width: 100%;
+    }
+
+    .score {
+        border: 5px red solid;
+        padding: 20px;
+    }
+    
+} */
