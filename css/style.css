@@ -13,6 +13,7 @@ body {
 
 header h1 {
     font-family: 'Shadows Into Light', cursive;
+    border-bottom: 5px solid red;
 }
 
 main {
@@ -36,7 +37,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 50%;
+    min-width: 50%;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -49,11 +50,14 @@ main {
 .score {
     border: 5px red solid;
     padding: 20px 70px;
+    margin: 0 10px;
 }
 
 #winner {
     margin: 30px 0;
     font-family: 'M PLUS 1p', sans-serif;
+    text-align: center;
+    min-width: 70%;
 
 }
 
@@ -64,12 +68,12 @@ button {
     text-transform: uppercase;
     font-weight: bold;
     font-family: 'Russo One', sans-serif;
-
+    margin: 0 10px;
     
 }
 
 #buttons {
-    width: 40%;
+    min-width: 40%;
     margin: 15px 0;
     display: flex;
     justify-content: space-evenly;
@@ -97,10 +101,15 @@ button {
     transform: translateY(-3px);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 913px) {
     main {
         width: 100%;
         min-height: 80vh;
+        padding: 10px;
+    }
+
+    header h1 {
+        border-bottom: 10px double red;
     }
 
     #rounds {
@@ -115,6 +124,21 @@ button {
         border: 1px red solid;
         padding: 20px;
     }
+
+    #buttons {
+
+        max-height: 180px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #reset, button {
+        margin: 0;
+    }
+
+    
+
     
 }
 
